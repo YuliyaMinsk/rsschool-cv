@@ -51,7 +51,7 @@ Now I would like to deepen my knowledge in development to better understand the 
 ## Working experience
 
 Coach for the development and promotion of the projects on the Internet  
-*November 2016 – untill now*  
+*November 2016 – until now*  
 
 Lotus Notes Developer - IBM Review application  
 Belarus IBA (IBM USA Business Partner)  
@@ -84,7 +84,7 @@ Environment: Lotus Domino/Notes R6/R7, Lotus Script and formulas
 
 * Belarusian National Technical University (2001 – 2005) Computer-aided design systems, Software Engineer, Faculty of information technologies and robotics
 
-#Languages
+## Languages
 
 * Russian - Native
 * English - B1 - Intermediate
