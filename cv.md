@@ -67,3 +67,25 @@ Lotus Notes Developer - Account of the agreements
 Belarus, CDIT of Belarusian National Technical University  
 *April 2005 – May 2006*  
 Environment: Lotus Domino/Notes R6/R7, Lotus Script and formulas  
+
+## Education
+
+* Training "Project Manager School" (March 2016)
+
+* Training "Conflict Management" (2015)
+
+* Training "Jedi Empty Inbox Technique" (2014)
+
+* International coaching academy MAXIMUM (2014 – 2015) Basic and career coaching courses 
+
+* Java - J2SE (2009)
+
+* IBM System z, DB2, PL/1 (September 2008)
+
+* Belarusian National Technical University (2001 – 2005) Computer-aided design systems, Software Engineer, Faculty of information technologies and robotics
+
+#Languages
+
+* Russian - Native
+* English - B1 - Intermediate
+  
