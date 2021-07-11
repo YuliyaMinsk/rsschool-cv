@@ -72,10 +72,11 @@ a {
 
 .nav-menu__link {
     color: #003DD9;
+    font-size: 16px;
   }
 
 .nav-menu__link:hover {
-    color: #799dfa;
+    color: #cacaca;             /*#799dfa;*/
 }
 
 .right-column__list {
@@ -94,7 +95,7 @@ a {
 }
 
 .right-column__link:hover {
-    color: #799dfa;
+    color: #cacaca;
 }  
 
 
@@ -158,3 +159,17 @@ ul.content__list:nth-last-of-type(1) {
 
 
 /* footer part */
+
+.footer__content {
+    min-height: 100px;
+    font-size: 24px;
+    background-color: #cacaca;
+    display: flex;
+    align-items: center;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
