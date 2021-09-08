@@ -1,0 +1,86 @@
+//// VARIABLES /////////////////////////////////////////////////
+
+$color-background: #343d46;
+$color-footer: #242b31;
+$color-primary: #1948ad;
+$color-additional: #ffffff;
+$color-disabled: #c7c7c7;
+$color-light: #FFFFFF; 
+$color-dark: #000000;
+
+$font-h1: 2.92rem;
+$font-default: 1rem;
+
+//// FONTS /////////////////////////////////////////////////////
+
+@font-face {
+  font-family: Poppins;
+  src: url("../assets/fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+
+//// GENERAL ///////////////////////////////////////////////////
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Raleway", "Verdana", sans-serif;
+  background-color: $color-background;
+  color: $color-light;
+  font-size: $font-default;
+}
+
+h1 {
+	font-size: $font-h1;
+  font-weight: 700;
+	text-align: center;
+	margin-top: 30px;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+._wrapper {
+  min-height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+//// HEADER ////////////////////////////////////////////////////
+
+
+
+//// MAIN //////////////////////////////////////////////////////
+
+
+
+//// FOOTER ////////////////////////////////////////////////////
+
+
+
+//// MEDIA /////////////////////////////////////////////////////
+
+@media (max-width: 991px) {
+  .mobile-nav {
+  }
+}
+
