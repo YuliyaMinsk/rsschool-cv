@@ -1,15 +1,18 @@
 //// VARIABLES /////////////////////////////////////////////////
 
-$color-background: #343d46;
-$color-footer: #242b31;
-$color-primary: #1948ad;
-$color-additional: #ffffff;
-$color-disabled: #c7c7c7;
+$color-background: #F6F7FF;
+$color-range-line: #EBEBEB;
+$color-primary: #4A63E7;
+$color-additional: #FF5959;
+$color-disabled: #939393;
 $color-light: #FFFFFF; 
 $color-dark: #000000;
 
-$font-h1: 2.92rem;
+$font-h1: 1.4rem;
 $font-default: 1rem;
+$font-slogan: 0.75rem;
+$font-menu: 0.9rem;
+$font-title: 4rem;
 
 //// FONTS /////////////////////////////////////////////////////
 
@@ -35,10 +38,11 @@ $font-default: 1rem;
 
 html, body {
   height: 100%;
-  font-family: "Raleway", "Verdana", sans-serif;
+  font-family: "Poppins", "Verdana", sans-serif;
   background-color: $color-background;
   color: $color-light;
   font-size: $font-default;
+  line-height: 200%;
 }
 
 h1 {
@@ -58,6 +62,11 @@ a {
   text-decoration: none;
 }
 
+.site-wrapper {
+  width: 1170px;
+  margin: 0 auto;
+}
+
 ._wrapper {
   min-height: 100%;
   margin: 0 auto;
@@ -65,12 +74,151 @@ a {
   flex-direction: column;
 }
 
+.primary-color {
+  background-color: $color-primary;
+}
+
+.additional-color {
+  background-color: $color-additional;
+}
+
+.transparent-color-with-border {
+  background-color: transparent;
+  border: solid 1px $color-light;
+}
+
+.light-color {
+  background-color: $color-light;
+}
+
+.shadow-dark {
+  box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+.button {
+  border-radius: 100px;
+  padding: 12px 26px;
+}
+
+.transparent-color-with-border.button:hover {
+  color: $color-dark;
+  background: $color-light;
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+}
+
+.additional-color.button:hover {
+  color: $color-light;
+  background: $color-primary;
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+}
+
+
 //// HEADER ////////////////////////////////////////////////////
 
+.header {
+  position: fixed;
+  top: 50px;
+  width: 275px;
+  min-height: 580px;
+  max-height: 580px; 
+  border-radius: 20px;
+  padding: 30px;
+  color: $color-light;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.yuliya-photo {
+  border-radius: 100%;
+  align-self: center;
+  margin-top: 10px;
+}
+
+.dot:after {
+  content: "";
+  background-color: #FF5959;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px;
+  height: 8px;
+  width: 8px;
+}
+
+.main-top-title.dot:after {
+  height: 13px;
+  width: 13px;
+}
+
+.site-slogan {
+  font-size: $font-slogan;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.nav-main {
+  padding-top: 30px;
+  font-size: $font-menu;
+  line-height: 250%;
+}
+
+.nav-main span {
+  margin-right: 20px;
+}
 
 
 //// MAIN //////////////////////////////////////////////////////
 
+.main {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.main-top {
+  border-radius: 20px 20px 20px 20px;
+  min-height: 580px;
+  max-width: 865px;
+}
+
+.main-top-content {
+  padding: 140px;
+}
+
+.main-top-title {
+  font-size: $font-title;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.main-top-description {
+  margin: 20px 0;
+}
+
+.buttons {
+  margin-top: 40px;
+}
+
+.buttons a {
+  margin-right: 20px;
+}
+
+.button span {
+  margin-right: 20px;
+}
 
 
 //// FOOTER ////////////////////////////////////////////////////
