@@ -312,7 +312,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   min-height: 580px;
 }
 
-.skills-cards {
+.cards-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -326,8 +326,11 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 .skills-card-item {
-  display: inline-block;
   max-width: 240px;
+}
+
+.card-item {
+  display: inline-block;
   border: solid 1px #EBEBEB;
   border-radius: 10px;
   padding: 30px 20px;
@@ -336,7 +339,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   text-align: center;
 }
 
-.skills-card-item:hover {
+.card-item:hover {
   border: none;
   background-color: #FF5959;
   border: solid 1px #FF5959;
@@ -345,12 +348,12 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
           box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
-.skills-card-item:hover > span,
-.skills-card-item:hover > h3 {
+.card-item:hover > span,
+.card-item:hover > h3 {
   color: #FFFFFF;
 }
 
-.skills-card-item span {
+.card-item span {
   font-size: 1.6rem;
   color: #FF5959;
   margin-bottom: 20px;
@@ -552,6 +555,15 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 .languages {
   min-height: 580px;
+}
+
+.languages-card-item {
+  width: 360px;
+}
+
+.presentation {
+  margin: 40px auto 20px auto;
+  text-align: center;
 }
 
 .footer {
