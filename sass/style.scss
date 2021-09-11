@@ -33,7 +33,7 @@ $font-title: 4rem;
 
 //// GENERAL ///////////////////////////////////////////////////
 
-* {
+*, ::after, ::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -64,6 +64,11 @@ h2 {
 }
 
 h3 {
+	font-size: $font-h3;
+  font-weight: 700;
+}
+
+h4 {
 	font-size: $font-h3;
   font-weight: 700;
 }
@@ -440,6 +445,83 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 .experience {
   min-height: 580px;
+}
+
+.experience-timeline {
+  position: relative;
+  padding-top: 70px;
+  margin-top: 40px;
+}
+
+.experience-timeline:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.experience-item {
+  clear: both;
+  position: relative;
+}
+
+.experience-date {
+  float: left;
+  width: 20%;
+  position: relative;
+}
+
+.experience-date:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 1px solid $color-additional;
+  background-color: $color-light;
+  border-radius: 100%;
+  padding: 4.5px;
+  top: 15%;
+  right: -8px;
+  z-index: 1;
+}
+
+.experience-description {
+  float: right;
+  margin: 0 0 6em;
+  padding-left: 60px;
+  width: 80%;
+}
+
+.experience-description h4 {
+  color: $color-dark;
+  margin-bottom: 10px;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0px;
+  left: calc(20% + 2px);
+  bottom: 0px;
+  width: 1px;
+  background: $color-additional;
+}
+
+.timeline-line::before, .timeline-line::after {
+  content: "";
+  display: block;
+  border-radius: 100%;
+  background: $color-additional;
+  position: absolute;
+  left: -3px;
+  height: 7px;
+  width: 7px;
+}
+
+.timeline-line::before {
+  top: 0;
+}
+
+.timeline-line::after {
+  bottom: 0;
 }
 
 .education{
