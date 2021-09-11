@@ -453,7 +453,11 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 .code-example {
-  min-height: 580px;
+  min-height: 530px;
+}
+
+.code-example-kata {
+  margin-top: 40px;
 }
 
 .experience {

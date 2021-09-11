@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
   <link rel='stylesheet' id='simple-line-icons-css'  href='css/simple-line-icons.css'/>
   <link rel="stylesheet" href="css/style.css">
   <title>Yuliya Niaverava CV</title>
@@ -47,8 +48,8 @@
           <p class="main-top-title dot">Hello</p>
           <p class="main-top-description">I am Yuliya Niaverava, junior front-end developer from Minsk, Belarus. I have some experience in HTML / CSS and Git, also I am good at JavaScript.</p>
           <div class="buttons">
-            <a href="#" class="button additional-color"><span class="icon-grid"></span>View Portfolio</a>
-            <a href="#" class="button transparent-color-with-border"><span class="icon-envelope"></span>Hire me</a>
+            <a href="#my-projects" class="button additional-color"><span class="icon-grid"></span>View Portfolio</a>
+            <a href="#summary" class="button transparent-color-with-border"><span class="icon-envelope"></span>Hire me</a>
           </div>
         </div>
       </section>
@@ -75,53 +76,53 @@
 
       <section class="section skills light-color shadow-blue" id="technical-skills">
         <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-cards">
-          <div class="skills-card-item">
+        <ul class="skills-cards">
+          <li class="skills-card-item">
             <span class="icon-organization"></span>
             <h3 class="card-title">HTML</h3>
             <p class="">HyperText Markup Language is the most basic building block of the Web</p>
-          </div> 
-          <div class="skills-card-item">
+          </li> 
+          <li class="skills-card-item">
             <span class="icon-organization"></span>
             <h3 class="card-title">CSS</h3>
             <p class="">Cascading Style Sheets is a stylesheet language used to describe the presentation of a document written in HTML or XML</p>
-          </div> 
-          <div class="skills-card-item">
+          </li> 
+          <li class="skills-card-item">
             <span class="icon-organization"></span>
             <h3 class="card-title">SASS</h3>
             <p class="">Sass is a stylesheet language that’s compiled to CSS. It allows you to use variables, nested rules, mixins, functions, and more, all with a fully CSS-compatible syntax.</p>
-          </div> 
-          <div class="skills-card-item">
+          </li> 
+          <li class="skills-card-item">
             <span class="icon-organization"></span>
             <h3 class="card-title">JavaScript</h3>
             <p class="">JavaScript is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions</p>
-          </div> 
-          <div class="skills-card-item">
+          </li> 
+          <li class="skills-card-item">
             <span class="icon-settings"></span>
             <h3 class="card-title">Git</h3>
             <p class="">Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code</p>
-          </div> 
-          <div class="skills-card-item">
+          </li> 
+          <li class="skills-card-item">
             <span class="icon-settings"></span>
             <h3 class="card-title">VSCode</h3>
             <p class="">Visual Studio Code is an integrated development environment made by Microsoft for Windows, Linux and macOS</p>
-          </div>
-          <div class="skills-card-item">
+          </li>
+          <li class="skills-card-item">
             <span class="icon-settings"></span>
             <h3 class="card-title">Jira</h3>
             <p class="">Jira is a issue tracking product developed by Atlassian that allows bug tracking and agile project management</p>
-          </div> 
-          <div class="skills-card-item">
+          </li> 
+          <li class="skills-card-item">
             <span class="icon-picture"></span>
             <h3 class="card-title">Figma</h3>
             <p class="">Figma is a cloud-based design and prototyping tool for digital projects</p>
-          </div> 
-          <div class="skills-card-item">
+          </li> 
+          <li class="skills-card-item">
             <span class="icon-picture"></span>
             <h3 class="card-title">Photoshop</h3>
             <p class="">Adobe Photoshop is a software application for image editing and photo retouching for use on Windows or MacOS computers</p>
-          </div> 
-        </div>
+          </li> 
+        </ul>
       </section>
 
       <section class="section projects light-color shadow-blue" id="my-projects">
@@ -176,7 +177,20 @@
 
       <section class="section code-example light-color shadow-blue" id="code-example">
         <h2 class="section-title">Code example</h2>
+        <div class="code-example-kata">
+          <pre>
+            <code class="javascript">
+    function highAndLow(numbers) {
+      let arrayNumbers = numbers.split(' ').map(Number).sort(compareNumbers);
+      return String(arrayNumbers[arrayNumbers.length-1] + ' ' + arrayNumbers[0]);
+    }
 
+    function compareNumbers(a, b) {
+      return a - b;
+    }
+            </code>
+          </pre>
+        </div>
       </section>
 
       <section class="section experience light-color shadow-blue" id="working-experience">
@@ -215,6 +229,8 @@
     </main>   
   </div>
 
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script> 
   <script src="index.js"></script>
 </body>
 </html>
