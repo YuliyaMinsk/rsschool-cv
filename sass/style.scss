@@ -285,6 +285,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 .main {
   margin-top: 50px;
   margin-bottom: 50px;
+  transition: all 0.3s ease-in-out;
 }
 
 .main-top {
@@ -359,7 +360,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 .skills-card-item {
-  max-width: 240px;
+  width: 240px;
 }
 
 .card-item {
@@ -618,6 +619,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
   .section {
     max-width: 100%;
+    padding: 65px 30px 60px 30px;
   }
 
   .header {
@@ -635,6 +637,35 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     margin-top: 20px;
   }
 
+  .summary-content {
+    flex-direction: column;
+  }
+
+  .cards-list {
+    justify-content: center;
+  }
+
+  .list-of-projects {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-item {
+    padding: 20px 0;
+  }
+
+  .thumb {
+    img {
+      width: 135%;
+    }
+  }
+  
+  .thumb:hover {
+    img {
+      transform: scale(1.3);
+    }
+  }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -642,6 +673,22 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   .main-top-content {
 		padding: 140px 0;
 	}
+
+  .card-item {
+    padding: 20px 10px;
+  }
+
+  .card-title {
+    margin: 4px auto;
+  }
+
+  .skills-card-item {
+    width: 100%;
+  }
+
+  .languages-card-item {
+    width: 100%;
+}
 
 }
 
