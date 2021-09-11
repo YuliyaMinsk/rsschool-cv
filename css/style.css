@@ -54,6 +54,8 @@ ol[class] {
 a {
   color: inherit;
   text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 a:hover {
@@ -356,6 +358,98 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 .projects {
   min-height: 580px;
+}
+
+.list-of-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.project-item {
+  display: inline-block;
+  max-width: 370px;
+  border-radius: 10px;
+  padding: 30px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.thumb {
+  max-height: 200px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.thumb img {
+  width: 130%;
+  -webkit-transform: translate(-30px, 0) scale(1);
+          transform: translate(-30px, 0) scale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.thumb:hover {
+  -webkit-box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.thumb:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.crumbs {
+  border-radius: 50px;
+  background: #FF5959;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 1px 8px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 1;
+}
+
+.crumbs:hover {
+  background: #4A63E7;
+  color: #FFFFFF;
+}
+
+.project-title {
+  margin: 16px auto;
+  color: #000000;
+}
+
+.project-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.project-item-data {
+  margin-right: 16px;
+}
+
+.project-item-data:after {
+  content: "";
+  background: #FF5959;
+  border-radius: 100%;
+  display: inline-block;
+  height: 3px;
+  margin-left: 1rem;
+  vertical-align: middle;
+  width: 3px;
 }
 
 .code-example {
