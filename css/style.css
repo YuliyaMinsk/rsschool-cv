@@ -67,6 +67,12 @@ a:hover {
   color: #FF5959;
 }
 
+code, pre, pre code {
+  white-space: pre-wrap;
+  word-break: break-all;
+  border-radius: 20px;
+}
+
 .site-wrapper {
   width: 1170px;
   margin: 0 auto;
@@ -129,6 +135,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 .button {
+  display: inline-block;
   border-radius: 100px;
   padding: 12px 26px;
 }
@@ -153,9 +160,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 .dot:after {
   content: "";
+  display: inline-block;
   background-color: #FF5959;
   border-radius: 50%;
-  display: inline-block;
   margin-left: 5px;
   height: 8px;
   width: 8px;
@@ -163,9 +170,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 .section {
   border-radius: 20px 20px 20px 20px;
-  max-width: 860px;
-  margin-bottom: 50px;
   padding: 65px 50px 60px 50px;
+  margin-bottom: 50px;
+  max-width: 860px;
   font-size: 0.9rem;
   line-height: 150%;
 }
@@ -176,18 +183,18 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 .section-title:after {
   content: "";
+  display: block;
   background: #FF5959;
   border-radius: 25px;
-  display: block;
-  height: 5px;
   margin-top: 14px;
+  height: 5px;
   width: 30px;
 }
 
 .mobile-header {
+  display: none;
   margin-top: 24px;
   border-radius: 20px;
-  display: none;
   -webkit-transform: translateX(0);
           transform: translateX(0);
   -webkit-transition: all 0.3s ease-in-out;
@@ -196,12 +203,11 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 .menu-icon {
   cursor: pointer;
-  background: transparent;
+  padding: 0;
   border: 0;
   outline: none;
+  background: transparent;
   vertical-align: middle;
-  padding: 0;
-  margin-right: 8px;
 }
 
 .mobile-header span:nth-child(2) {
@@ -209,10 +215,10 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   margin-bottom: 4px;
 }
 
-.mobile-header span {
+.mobile-header .burger-menu {
+  display: block;
   background: #FFFFFF;
   border-radius: 10px;
-  display: block;
   height: 4px;
   width: 25px;
 }
@@ -224,12 +230,12 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 .header {
   position: fixed;
+  padding: 30px;
   top: 50px;
   width: 275px;
   min-height: 600px;
   max-height: 600px;
   border-radius: 20px;
-  padding: 30px;
   color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -279,6 +285,8 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 .main {
   margin-top: 50px;
   margin-bottom: 50px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .main-top {
@@ -300,10 +308,11 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 .buttons {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .buttons a {
+  margin-top: 20px;
   margin-right: 20px;
 }
 
@@ -344,8 +353,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 .contacts li {
-  min-width: 285px;
+  min-width: 260px;
   margin-bottom: 10px;
+  margin-right: 20px;
 }
 
 .skills {
@@ -366,17 +376,17 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 .skills-card-item {
-  max-width: 240px;
+  width: 240px;
 }
 
 .card-item {
   display: inline-block;
-  border: solid 1px #EBEBEB;
   border-radius: 10px;
   padding: 30px 20px;
+  text-align: center;
+  border: solid 1px #EBEBEB;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  text-align: center;
 }
 
 .card-item:hover {
@@ -458,15 +468,15 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 .crumbs {
-  border-radius: 50px;
-  background: #FF5959;
-  color: #FFFFFF;
-  font-size: 12px;
-  padding: 1px 8px;
   position: absolute;
+  border-radius: 50px;
+  padding: 1px 8px;
   left: 20px;
   top: 20px;
   z-index: 1;
+  background: #FF5959;
+  color: #FFFFFF;
+  font-size: 12px;
 }
 
 .crumbs:hover {
@@ -491,13 +501,13 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 .project-item-data:after {
   content: "";
-  background: #FF5959;
-  border-radius: 100%;
   display: inline-block;
-  height: 3px;
+  border-radius: 100%;
   margin-left: 1rem;
-  vertical-align: middle;
   width: 3px;
+  height: 3px;
+  vertical-align: middle;
+  background: #FF5959;
 }
 
 .code-example {
@@ -538,15 +548,15 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 .timeline-date:before {
   content: "";
   position: absolute;
-  width: 8px;
-  height: 8px;
-  border: 1px solid #FF5959;
-  background-color: #FFFFFF;
   border-radius: 100%;
   padding: 4.5px;
   top: 15%;
   right: -8px;
   z-index: 1;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #FF5959;
+  background-color: #FFFFFF;
 }
 
 .timeline-description {
@@ -573,12 +583,12 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 .timeline-line::before, .timeline-line::after {
   content: "";
   display: block;
-  border-radius: 100%;
-  background: #FF5959;
   position: absolute;
   left: -3px;
   height: 7px;
   width: 7px;
+  border-radius: 100%;
+  background: #FF5959;
 }
 
 .timeline-line::before {
@@ -640,6 +650,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   }
   .section {
     max-width: 100%;
+    padding: 65px 30px 60px 30px;
   }
   .header {
     display: none;
@@ -654,13 +665,99 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     gap: 10px;
     padding: 9px 16px;
   }
+  .menu-icon {
+    color: #FFFFFF;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    overflow: auto;
+    z-index: 1;
+    background-color: #4A63E7;
+    -webkit-box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.2);
+  }
+  .dropdown-content li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .burger-menu-icon {
+    margin-right: 20px;
+  }
+  .dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+  }
+  .show {
+    display: block;
+  }
   .main {
     margin-top: 20px;
+  }
+  .summary-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cards-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .list-of-projects {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .project-item {
+    padding: 20px 0;
+  }
+  .thumb img {
+    width: 135%;
+  }
+  .thumb:hover img {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
 }
 
 @media only screen and (max-width: 767px) {
   .main-top-content {
     padding: 140px 0;
+  }
+  .card-item {
+    padding: 20px 10px;
+  }
+  .card-title {
+    margin: 4px auto;
+  }
+  .skills-card-item {
+    width: 100%;
+  }
+  .languages-card-item {
+    width: 100%;
+  }
+  .timeline-line {
+    left: calc(30% + 2px);
+  }
+  .timeline-date {
+    width: 30%;
+  }
+  .timeline-description {
+    padding-left: 30px;
+    width: 70%;
   }
 }
