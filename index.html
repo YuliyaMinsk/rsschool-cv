@@ -12,10 +12,35 @@
 <body>
   <div class="site-wrapper">
     <div class="mobile-header primary-color">
-      <div class="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="dropdown">
+        <div onclick="showMenu()" class="drop-button menu-icon">
+          <span class="drop-button burger-menu"></span>
+          <span class="drop-button burger-menu"></span>
+          <span class="drop-button burger-menu"></span>
+        </div>
+        <ul id="dropdown-list" class="dropdown-content">
+          <li>
+            <a href="#summary"><span class="burger-menu-icon icon-user"></span>Summary</a>
+          </li>
+          <li >
+            <a href="#technical-skills"><span class="burger-menu-icon icon-bulb"></span>Technical Skills</a>
+          </li>
+          <li>
+            <a href="#my-projects"><span class="burger-menu-icon icon-grid"></span>My projects</a>
+          </li>
+          <li>
+            <a href="#code-example"><span class="burger-menu-icon icon-note"></span>Code example</a>
+          </li>
+          <li>
+            <a href="#experience"><span class="burger-menu-icon icon-pencil"></span>Experience</a>
+          </li>
+          <li>
+            <a href="#languages"><span class="burger-menu-icon icon-bubble"></span>Languages</a>
+          </li>
+          <li>
+            <a href="#education"><span class="burger-menu-icon icon-graduation"></span>Education</a>
+          </li>
+        </ul>
       </div>
       <img class="mobile yuliya-photo" width="40" height="40" src="assets/images/photo-sm.jpg" alt="Yuliya's photo">
       <a href="#" class="mobile-title dot">Yuliya Niaverava</a>    
@@ -49,11 +74,11 @@
             <a class="nav-menu-education" href="#education"><span class="icon-graduation"></span>Education</a>
           </li>
         </ul>
-    </nav>
+    </nav>    
     </header>
 
     <main class="main float-right">
-      <section class="main-top section primary-color shadow-dark">
+      <div class="main-top section primary-color shadow-dark">
         <div class="main-top-content">
           <p class="main-top-title dot">Hello</p>
           <p class="main-top-description">I am Yuliya Niaverava, junior front-end developer from Minsk, Belarus. I have some experience in HTML / CSS and Git, also I am good at JavaScript.</p>
@@ -62,7 +87,7 @@
             <a href="#summary" class="button transparent-color-with-border"><span class="icon-envelope"></span>Hire me</a>
           </div>
         </div>
-      </section>
+      </div>
 
       <section class="section summary light-color shadow-blue" id="summary">
         <h2 class="section-title">Summary</h2>
@@ -167,7 +192,7 @@
             </div>
             <h3 class="project-title">Museum Louvre</h3>
             <ul class="project-list">
-              <li class="project-item-data">27 August 2021</li>
+              <li class="project-item-data">11 August 2021</li>
               <li>HTML, CSS</li>
             </ul>
           </div> 
@@ -273,7 +298,7 @@
         </ul>
 
         <div class="presentation">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/9AeMOFAj2XQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/9AeMOFAj2XQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </section>
 
@@ -285,7 +310,7 @@
               2021
             </div>
             <div class="timeline-description">
-              <h4>JavaScript/Front-end. Stage 0</h4>
+              <h4>JavaScript / Front-end. Stage 0</h4>
               <p>RS School</p>
             </div>
           </div>
@@ -383,7 +408,6 @@
   </div>
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
-  <script>hljs.highlightAll();</script> 
   <script src="index.js"></script>
 </body>
 </html>

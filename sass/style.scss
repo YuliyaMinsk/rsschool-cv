@@ -88,6 +88,12 @@ a:hover {
   color: $color-additional;
 }
 
+code, pre, pre code {
+  white-space: pre-wrap;
+  word-break: break-all;
+  border-radius: 20px;
+}
+
 .site-wrapper {
   width: 1170px;
   margin: 0 auto;
@@ -143,6 +149,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 .button {
+  display: inline-block;
   border-radius: 100px;
   padding: 12px 26px;
 }
@@ -163,9 +170,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 .dot:after {
   content: "";
+  display: inline-block;
   background-color: $color-additional;
   border-radius: 50%;
-  display: inline-block;
   margin-left: 5px;
   height: 8px;
   width: 8px;
@@ -173,9 +180,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 .section {
   border-radius: 20px 20px 20px 20px;
-  max-width: 860px;
-  margin-bottom: 50px;
   padding: 65px 50px 60px 50px;
+  margin-bottom: 50px;
+  max-width: 860px;
   font-size: $font-menu;
   line-height: 150%;
 }
@@ -186,11 +193,11 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 .section-title:after {
   content: "";
+  display: block;
   background: $color-additional;
   border-radius: 25px;
-  display: block;
-  height: 5px;
   margin-top: 14px;
+  height: 5px;
   width: 30px;
 }
 
@@ -198,21 +205,20 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 //// HEADER ////////////////////////////////////////////////////
 
 .mobile-header {
+  display: none;
   margin-top: 24px;
   border-radius: 20px;
-  display: none;
   transform: translateX(0);
   transition: all 0.3s ease-in-out;
 }
 
 .menu-icon {
   cursor: pointer;
-  background: transparent;
+  padding: 0;
   border: 0;
   outline: none;
+  background: transparent;
   vertical-align: middle;
-  padding: 0;
-  margin-right: 8px;
 }
 
 .mobile-header span:nth-child(2) {
@@ -220,10 +226,10 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   margin-bottom: 4px;
 }
 
-.mobile-header span {
+.mobile-header .burger-menu {
+  display: block;
   background: $color-light;
   border-radius: 10px;
-  display: block;
   height: 4px;
   width: 25px;
 }
@@ -235,12 +241,12 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 .header {
   position: fixed;
+  padding: 30px;
   top: 50px;
   width: 275px;
   min-height: 600px;
   max-height: 600px; 
   border-radius: 20px;
-  padding: 30px;
   color: $color-light;
 
   display: flex;
@@ -307,10 +313,11 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 .buttons {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .buttons a {
+  margin-top: 20px;
   margin-right: 20px;
 }
 
@@ -343,8 +350,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 .contacts li {
-  min-width: 285px;
+  min-width: 260px;
   margin-bottom: 10px;
+  margin-right: 20px;
 }
 
 .skills {
@@ -365,11 +373,11 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 .card-item {
   display: inline-block;
-  border: solid 1px $color-range-line;
   border-radius: 10px;
   padding: 30px 20px;
-  transition: all 0.3s ease-in-out;
   text-align: center;
+  border: solid 1px $color-range-line;
+  transition: all 0.3s ease-in-out;
 }
 
 .card-item:hover {
@@ -437,15 +445,15 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 .crumbs {
-  border-radius: 50px;
-  background: $color-additional;
-  color: $color-light;
-  font-size: 12px;
-  padding: 1px 8px;
   position: absolute;
+  border-radius: 50px;
+  padding: 1px 8px;
   left: 20px;
   top: 20px;
   z-index: 1;
+  background: $color-additional;
+  color: $color-light;
+  font-size: 12px;
 }
 
 .crumbs:hover {
@@ -468,13 +476,13 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 .project-item-data:after {
   content: "";
-  background: $color-additional;
-  border-radius: 100%;
   display: inline-block;
-  height: 3px;
+  border-radius: 100%;
   margin-left: 1rem;
-  vertical-align: middle;
   width: 3px;
+  height: 3px;
+  vertical-align: middle;
+  background: $color-additional;
 }
 
 .code-example {
@@ -515,15 +523,15 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 .timeline-date:before {
   content: "";
   position: absolute;
-  width: 8px;
-  height: 8px;
-  border: 1px solid $color-additional;
-  background-color: $color-light;
   border-radius: 100%;
   padding: 4.5px;
   top: 15%;
   right: -8px;
   z-index: 1;
+  width: 8px;
+  height: 8px;
+  border: 1px solid $color-additional;
+  background-color: $color-light;
 }
 
 .timeline-description {
@@ -550,12 +558,12 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 .timeline-line::before, .timeline-line::after {
   content: "";
   display: block;
-  border-radius: 100%;
-  background: $color-additional;
   position: absolute;
   left: -3px;
   height: 7px;
   width: 7px;
+  border-radius: 100%;
+  background: $color-additional;
 }
 
 .timeline-line::before {
@@ -633,6 +641,46 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     padding: 9px 16px;
   }
 
+  .menu-icon {
+    color: $color-light;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+  }
+   
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    overflow: auto;
+    z-index: 1;
+    background-color: $color-primary;
+    box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .dropdown-content li {
+    display: flex;
+    
+  }
+
+  .burger-menu-icon {
+    margin-right: 20px;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+  }
+  
+  .show {
+    display: block;
+  }
+
   .main {
     margin-top: 20px;
   }
@@ -689,6 +737,20 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   .languages-card-item {
     width: 100%;
 }
+
+.timeline-line {
+  left: calc(30% + 2px);
+}
+
+.timeline-date {
+  width: 30%;
+}
+
+.timeline-description {
+  padding-left: 30px;
+  width: 70%;
+}
+
 
 }
 
