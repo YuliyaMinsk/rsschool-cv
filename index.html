@@ -219,7 +219,7 @@ function revrot(str, sz) {
   if (sz == 0) return "";
   
   let resultStr = "";  
-  for (let i = 0; (i + sz) <= str.length; i = i + sz) {
+  for (let i = 0; (i + sz) &lt;= str.length; i = i + sz) {
     let substr = str.slice(i, i + sz)
     if (sumOfCubes(substr) % 2 === 0) substr = rotate(substr);
     else substr = reverse(substr);
@@ -238,7 +238,7 @@ function sumOfCubes(str) {
 function reverse(str) {
   let newArray = new Array(str.length).fill(0);
   let oldArray = str.split("");
-  for (let i = 1; i < oldArray.length; i++) {
+  for (let i = 1; i &lt; oldArray.length; i++) {
     newArray[i-1] = oldArray[i];
   }
   newArray[oldArray.length-1] = oldArray[0];
@@ -323,7 +323,7 @@ function rotate(str) {
         </ul>
 
         <div class="presentation">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/_VKNPpYTg8M?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/_VKNPpYTg8M?controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </section>
 
